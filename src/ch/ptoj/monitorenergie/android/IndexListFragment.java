@@ -11,14 +11,10 @@ import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.ListView;
 
+@SuppressWarnings("unused")
 public class IndexListFragment extends ListFragment {
 
-	/*
-	 * @Override public View onCreateView(LayoutInflater inflater, ViewGroup
-	 * container,Bundle savedInstanceState) { View view =
-	 * inflater.inflate(R.layout.indexlist_fragment,container, false); return
-	 * view; }
-	 */
+	
 
 	private String lastDetail;
 	
