@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 
 public class IndexListFragment extends ListFragment {
@@ -31,10 +32,9 @@ public class IndexListFragment extends ListFragment {
 	public void onListItemClick(ListView l, View v, int position, long id) {
 		String value = (String) l.getAdapter().getItem(position);
 
-		IndexDetailFragment fragment = (IndexDetailFragment) getFragmentManager()
-				.findFragmentById(R.id.details_container);
-		System.out.println("visible: "+fragment.isVisible()+", hidden:"+fragment.isHidden()+", detached:"+fragment.isDetached());
-		if (fragment != null && fragment.isVisible()) {
+		final FrameLayout frameLayout = (FrameLayout) getActivity().findViewById(R.id.details_container);
+		if (frameLayout.getVisibility()==View.VISIBLE) {
+			IndexDetailFragment fragment=(IndexDetailFragment)this.getFragmentManager().findFragmentById(R.id.details_container);
 			fragment.setText(value);
 		}
 		else {
