@@ -21,11 +21,18 @@ public class IndexDetailFragment extends Fragment {
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
-		String item=getActivity().getIntent().getExtras().getString("item");
-		TextView tv=(TextView)getActivity().findViewById(R.id.textView1);
-		tv.setText(item);
+		if(getActivity().getIntent()!=null&&getActivity().getIntent().getExtras()!=null){
+    		String item=getActivity().getIntent().getExtras().getString("item");
+	    	TextView tv=(TextView)getActivity().findViewById(R.id.textView1);
+		    tv.setText(item);
+		}
 	}
   
+	public void setText(String text){
+    	TextView tv=(TextView)getActivity().findViewById(R.id.textView1);
+	    tv.setText(text);
+		
+	}
 
 
 } 
