@@ -6,6 +6,11 @@
     <string name="hello_world">Hello world!</string>
     <string name="releve">Relevé</string>
     <string name="index">Mes index</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="user">Utilisateur</string>
+    <string name="password">Mot de passe</string>
+    <string name="fluids">Liste des fluides</string>
     <string name="title_activity_index_list">IndexListActivity</string>
 
 </resources>
