@@ -23,7 +23,7 @@ public class MonitorEnergie extends Application {
 	}
 	
 	private void initAccount(){
-	   account=new Account("olivier","svpixi");
+	   account=new Account("","");
 	}
 	
 	

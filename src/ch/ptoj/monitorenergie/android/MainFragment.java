@@ -106,6 +106,7 @@ public class MainFragment extends Fragment implements OnTaskCompleted {
 		MonitorEnergie.getInstance().setAccount(account);
 		
 		
+	
 		MonitorEnergie.getInstance().login(this);
 	}
 
